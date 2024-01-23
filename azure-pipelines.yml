@@ -11,7 +11,7 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  - stage: test-stage
+  - stage: teststage
     displayName: 'test-stage to see script execution'
     jobs:
       - job: validate
@@ -20,6 +20,6 @@ stages:
         steps:
         - script: |
             ls
-            
+
 
 
