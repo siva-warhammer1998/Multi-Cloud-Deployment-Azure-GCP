@@ -10,4 +10,16 @@ pool:
   name: Default
   vmImage: ubuntu-latest
 
+stages:
+  - stage: test-stage
+    displayName: 'test-stage to see script execution'
+    jobs:
+      - job: validate
+        workspace:
+          clean: all
+        steps:
+        - script: |
+            ls
+            
+
 
