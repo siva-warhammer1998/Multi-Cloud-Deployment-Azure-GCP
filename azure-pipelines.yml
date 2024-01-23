@@ -20,6 +20,12 @@ stages:
         steps:
         - script: |
             ls
+        - task: TerraformTaskV4@4
+          inputs:
+            provider: 'gcp'
+            command: 'init'
+            backendServiceGCP: 'tf-gcp-sa-resource'
+            backendGCPBucketName: 'terraform-storage-bucket-siva'
 
 
 
