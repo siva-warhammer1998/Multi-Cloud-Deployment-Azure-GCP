@@ -20,6 +20,7 @@ stages:
         steps:
         - script: |
             cd GCP-Infra
+            ls
         - task: TerraformTaskV4@4
           inputs:
             provider: 'gcp'
