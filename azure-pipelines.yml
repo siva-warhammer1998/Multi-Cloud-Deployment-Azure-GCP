@@ -19,7 +19,7 @@ stages:
           clean: all
         steps:
         - script: |
-            ls
+            cd GCP-Infra
         - task: TerraformTaskV4@4
           inputs:
             provider: 'gcp'
