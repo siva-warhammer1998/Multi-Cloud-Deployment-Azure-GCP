@@ -9,3 +9,6 @@ Multi cloud deployment using Azure Devops and Github as source code is planned
 4. seperate deployment pipeline to deploy to the respective kube clusters
 5. can use azure dns to act as a lb between the two public URLS -  needs to be finalized
 
+
+
+

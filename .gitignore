@@ -1,1 +1,1 @@
-.terraform/*
+./GCP-Infra/.terraform.lock.*
