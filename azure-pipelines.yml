@@ -28,6 +28,12 @@ stages:
             workingDirectory: './GCP-Infra'
             backendServiceGCP: 'tf-gcp-sa-resource'
             backendGCPBucketName: 'terraform-storage-bucket-siva'
-
+        - task: TerraformTaskV4@4
+          inputs:
+            provider: 'gcp'
+            command: 'plan'
+            workingDirectory: './GCP-Infra'
+            backendServiceGCP: 'tf-gcp-sa-resource'
+            backendGCPBucketName: 'terraform-storage-bucket-siva'
 
 
