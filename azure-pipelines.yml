@@ -35,5 +35,6 @@ stages:
             workingDirectory: './GCP-Infra'
             backendServiceGCP: 'tf-gcp-sa-resource'
             backendGCPBucketName: 'terraform-storage-bucket-siva'
+            environmentServiceNameGCP: 'tf-gcp-sa-resource'
 
 
