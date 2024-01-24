@@ -25,6 +25,7 @@ stages:
           inputs:
             provider: 'gcp'
             command: 'init'
+            workingDirectory: './GCP-Infra'
             backendServiceGCP: 'tf-gcp-sa-resource'
             backendGCPBucketName: 'terraform-storage-bucket-siva'
 
